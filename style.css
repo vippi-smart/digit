@@ -1,0 +1,313 @@
+
+
+  #nuls{
+    display: flex;
+    flex-direction: column;
+    background-image:url(pics/seo.jpg) ;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position:relative;
+    min-block-size: 80vh;
+    place-content: center;
+    z-index: -1;
+    
+  }
+  #nuls::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to right bottom,rgba(0, 17, 255, 0.74),rgba(135, 9, 26, 0.699));
+    z-index: 1;   
+  }
+
+
+
+#nuls h1{
+   
+  align-self: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-weight: bolder;
+  font-size: 300%;
+}
+
+#actual{
+  background:linear-gradient(to right bottom,rgba(0, 102, 255, 0.651),rgb(135, 9, 26) );
+  height: auto;
+  width: auto;
+  place-content: center;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+/* #actual::before{
+  content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right bottom, #001848a8, #0a1d3bb2);
+ 
+} */
+
+.service{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: auto;
+  width: auto;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  backdrop-filter: blur(10px);
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range:entry 0 ;
+
+}
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.service img{
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+.service p{
+  display: inline;
+  font-weight: bolder;
+  font-size: xx-large;
+ text-align: center;
+  color: whitesmoke;
+  
+
+}
+.service button{
+
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: larger;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+/* button customization  */
+.btn-custom{
+  border-radius:10px;
+  outline: none;
+  border: seashell;
+  size: 20px;
+  background: transparent;
+  box-shadow: 0 0 15px rgb(0, 224, 138);
+  cursor:pointer;
+  color: aliceblue;
+  font-weight: bolder;
+}
+.btn-custom:active{
+  box-shadow: none;
+}
+
+
+#nuls button{
+  display: inline;
+  position: absolute;
+  z-index: 10;
+  border: none;
+  top: 80%;
+ left: 40%;
+}
+
+#main-btn{
+
+  position:fixed;
+  z-index: 2;
+
+  
+}
+
+/* contact form here */
+#contain{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+/* .service span{
+  display: none;
+}
+.dis{
+  display: block;
+} */
+.boxes{
+
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  height: 90vh;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#top{
+  background: linear-gradient(to right ,rgb(249, 253, 5) , darkviolet,rgb(243, 19, 3));
+  background-clip: text;
+  color: transparent;
+  display: inline;
+  font-weight: bolder;
+  font-size: 500%;
+  
+}
+/* form customization  */
+main{
+  display: flex;
+  background-image: url(service-pics/leads.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height:auto;
+  width: auto;
+}
+.form-show{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns:1fr  ;
+   margin: 20px;
+  height: auto;
+  width: auto;
+ background-color: rgba(245, 245, 245, 0.37);
+ backdrop-filter: blur(8px);
+ border-radius: 10px;
+
+}
+.form-show strong{
+  font-size:200%;
+  font-weight: bolder;
+  background-image: linear-gradient(to right,yellow,violet);
+  background-clip: text;
+  color: transparent;
+  display: block;
+}
+
+.form-show form{
+  display: flex; 
+  height: auto;
+  width: auto; 
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-show p{
+  
+  font-weight: bolder;
+  font-size: large;
+  display: inline-block;
+  margin: 20px;
+
+}
+
+.form-control{
+  border: none;
+  border-bottom:  solid black;
+  outline: none;
+  background-color: transparent;
+  width: max-content;
+
+    
+}
+.form-control::placeholder{
+  color:yellow   ;
+}
+
+.form-control:focus{
+  outline: none;
+  box-shadow: 0 3px 3px black;
+  background-color: transparent;
+  border: solid;
+  padding: 10px;
+  
+      
+}
+.form-label{
+  margin: 12px;
+  font-size: 150%;
+  font-weight: bolder;
+  color: rgb(255, 0, 0);
+}
+.form-show button{
+  color: whitesmoke;
+  background-color: green;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+
+}
+#or{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 
+#canges{
+  left: 10%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  animation: ani s  steps(3) infinite;
+  color: white;
+  font-size: large;
+  font-weight: 900;
+  transition: 2s ;
+}
+l
+@keyframes ani{
+0%{
+  top:0px;
+  
+}
+50%{
+  top: 10px;
+  transform: translate(20);
+}
+100%{
+  top:20px;
+  opacity: 0;
+
+}
+} */
